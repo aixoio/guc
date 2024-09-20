@@ -1,8 +1,9 @@
 package main
 
-import "fmt"
+import "github.com/aixoio/guc/guc"
 
 func main() {
-  fmt.Println("Hello world")
+  code := guc.GetCommand("PRINT Hello, world!", 1)
+  code.Run()
 }
 
