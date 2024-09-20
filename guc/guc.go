@@ -15,6 +15,10 @@ func GetCommand(line string, index int) commands.Command {
     }
   }
 
-  return &codes.NothingCode{}
+  
+
+  return &codes.NothingCode{
+    Success: true,
+  }
 }
 
